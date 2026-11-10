@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Agency FB;
+    font-family: "Agency FB", sans-serif;
 }
 
 body{
@@ -12,12 +12,12 @@ body{
 }
 
 .Navigation{
-    height: 70px;
-    width: 10;
+    min-height: 70px;
     margin: 10px;
     background-color: #19c8b9;
     border-radius: 30px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     position: sticky;
     top: 5px;
@@ -34,7 +34,8 @@ body{
 .catagory{
     display: flex;
     list-style: none;
-    margin-left: 500px;
+    margin-left: auto;
+    margin-right: 20px;
     font-size: large;
 }
 
@@ -79,6 +80,8 @@ h2{
     margin-top: 20px;
     padding-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-evenly;
 }
 h3{
@@ -86,8 +89,9 @@ h3{
     margin: 10px 0 10px 0;
 }
 .Menu1{
-    height: 500px;
+    min-height: 500px;
     width: 320px;
+    max-width: 90%;
     background-color: white;
 }
 .BreakFasts{
@@ -114,7 +118,7 @@ h3{
 }
 table{
     margin: auto;
-    width: 290px;
+    width: 90%;
 }
 tr{
     transform: scale(100%);
@@ -126,7 +130,6 @@ tr:hover{
 
 /* OfferZone */
 .OfferZone{
-    height: ;
     background-color:rgba(0, 0, 255, 0.5);
     color: white;
     margin: 10px;
@@ -134,19 +137,13 @@ tr:hover{
 }
 .items{
     display: grid;
-    grid-template-areas: 
-        'A B C D'
-        'E F G H'
-    ;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
 }
 .item{
     flex-grow: 1;
-    height: 340px;
-    max-width: calc(100%/4);
-    min-width: 230px;
+    min-height: 340px;
     margin: 30px 0 30px 0;
     padding: 0px 10px 0px 10px;
     background-color: white;
@@ -165,33 +162,42 @@ h4{
 }
 .ItemImg{
     height: 200px;
-    padding: 5px 10px 5px 10px;
+    width: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 5px auto;
     border-radius: 50%;
 }
 span{
     margin: 20px 0 ;
 }
-.item1{
-    grid-area: A;
+
+/* Responsive */
+@media (max-width: 1000px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-.item2{
-    grid-area: B;
-}
-.item3{
-    grid-area: C;
-}
-.item4{
-    grid-area: D;
-}
-.item5{
-    grid-area: E;
-}
-.item6{
-    grid-area: F;
-}
-.item7{
-    grid-area: G;
-}
-.item8{
-    grid-area: H;
+
+@media (max-width: 600px){
+    .items{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 28px;
+    }
+    p{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .catagory{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .list{
+        margin: 0 6px;
+    }
+    .logoImg{
+        height: 45px;
+    }
 }
