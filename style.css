@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Agency FB;
+}
+
+body{
+    background-image: url(./images/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.Navigation{
+    height: 70px;
+    width: 10;
+    margin: 10px;
+    background-color: #19c8b9;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 5px;
+    z-index: 1;
+}
+
+.logoImg{
+    height: 60px;
+    border-radius: 50px;
+    margin-left: 10px;
+
+}
+
+.catagory{
+    display: flex;
+    list-style: none;
+    margin-left: 500px;
+    font-size: large;
+}
+
+.list{
+    margin:0 20px 0 20px;
+    transform: scale(100%);
+    transition: all 0.2s ease-in;
+}
+
+.list:hover{
+    border-bottom: 2px solid black;
+    color: white;
+    transform: scale(120%);
+}
+
+#contant{
+    background-color:rgba(25, 200, 185 , 50%);
+    color: white;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+h1{
+    font-size: 40px;
+    padding: 20px;
+}
+p{
+    font-size: 20px;
+    padding: 10px 0 10px 20px;
+}
+hr{
+    background-color:white;
+    height:2px;
+}
+/* For menu */
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin:10px 0 10px 0;
+}
+.Menu{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+h3{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.Menu1{
+    height: 500px;
+    width: 320px;
+    background-color: white;
+}
+.BreakFasts{
+    background-image: url(./images/morning.webp);
+    background-size: cover;
+    color: #ff0000;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.Lunch{
+    background-image: url(./images/afternoon.jpg);
+    background-size: cover;
+    color: #ff0000;
+    font-weight: bold;
+    border-radius: 20px;
+    
+}
+.Dinner{
+    background-image: url(./images/night.jpg);
+    background-size: cover;
+    color: #ff0000 ;
+    font-weight: bold;
+    border-radius: 20px;
+}
+table{
+    margin: auto;
+    width: 290px;
+}
+tr{
+    transform: scale(100%);
+    transition: all 0.3s ease;
+}
+tr:hover{
+    transform: scale(110%)
+}
+
+/* OfferZone */
+.OfferZone{
+    height: ;
+    background-color:rgba(0, 0, 255, 0.5);
+    color: white;
+    margin: 10px;
+    border-radius: 30px;  
+}
+.items{
+    display: grid;
+    grid-template-areas: 
+        'A B C D'
+        'E F G H'
+    ;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    
+}
+.item{
+    flex-grow: 1;
+    height: 340px;
+    max-width: calc(100%/4);
+    min-width: 230px;
+    margin: 30px 0 30px 0;
+    padding: 0px 10px 0px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 30px 0 30px 0;
+    transform: scale(100%);
+    transition: all 0.5s ease;
+    z-index: 0;
+}
+.item:hover{
+    transform: scale(105%);
+}
+h4{
+    font-size: 30px;
+    text-align: center;
+}
+.ItemImg{
+    height: 200px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+}
+span{
+    margin: 20px 0 ;
+}
+.item1{
+    grid-area: A;
+}
+.item2{
+    grid-area: B;
+}
+.item3{
+    grid-area: C;
+}
+.item4{
+    grid-area: D;
+}
+.item5{
+    grid-area: E;
+}
+.item6{
+    grid-area: F;
+}
+.item7{
+    grid-area: G;
+}
+.item8{
+    grid-area: H;
+}
